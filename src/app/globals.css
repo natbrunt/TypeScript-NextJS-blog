@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 44 87% 98%;
+    --foreground: 192 81% 14%;
+
+    --card: 44 87% 94%;
+    --card-foreground: 192 81% 14%;
+
+    --popover: 44 87% 94%;
+    --popover-foreground: 192 81% 14%;
+
+    --primary: 180 54% 43%;
+    --primary-foreground: 44 87% 98%;
+    
+    --secondary: 46 42% 76%;
+    --secondary-foreground: 192 81% 14%;
+
+    --muted: 46 42% 88%;
+    --muted-foreground: 195 14% 42%;
+
+    --accent: 164 45% 51%;
+    --accent-foreground: 192 81% 14%;
+
+    --destructive: 1 71% 52%;
+    --destructive-foreground: 44 87% 98%;
+
+    --border: 46 42% 76%;
+    --input: 46 42% 76%;
+    --ring: 180 54% 43%;
+
+    --radius: 0.5rem;
+
+  }
+
+  .dark {
+    --background: 192 81% 14%;
+    --foreground: 44 87% 98%;
+
+    --card: 192 81% 18%;
+    --card-foreground: 44 87% 98%;
+
+    --popover: 192 81% 18%;
+    --popover-foreground: 44 87% 98%;
+
+    --primary: 180 54% 43%;
+    --primary-foreground: 192 81% 14%;
+
+    --secondary: 195 23% 32%;
+    --secondary-foreground: 44 87% 98%;
+
+    --muted: 195 23% 32%;
+    --muted-foreground: 46 42% 76%;
+
+    --accent: 164 45% 51%;
+    --accent-foreground: 192 81% 14%;
+
+    --destructive: 1 71% 52%;
+    --destructive-foreground: 44 87% 98%;
+
+    --border: 195 23% 32%;
+    --input: 195 23% 32%;
+    --ring: 180 54% 43%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Additional custom styles */
+.article-card {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.article-card:hover {
+  @apply shadow-lg;
+}
+
+.article-image {
+  @apply transition-transform duration-300 ease-in-out;
+}
+
+.article-card:hover .article-image {
+  @apply scale-105;
+}
+
+.article-content-fade {
+  @apply absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-background to-transparent;
+}
+
