@@ -23,7 +23,7 @@ export function ArticleDetail({ id }: { id: string }) {
   useEffect(() => {
     const fetchArticle = async () => {
       try {
-        const response = await axios.get<Article>(`${URL}getArticle/${id}`)
+        const response = await axios.get<Article>(`${URL}tnsv-blog/getArticle/${id}`)
         setArticle(response.data)
       } catch (err) {
         setError("Failed to fetch article.")
