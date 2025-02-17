@@ -49,11 +49,12 @@ export function ArticleFeed() {
   const [articles, setArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
+  const URL = process.env.NEXT_PUBLIC_SERVER_URL;
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<Article[]>("https://nathanjbee.app/tnsv-blog/getArticles");
+        const response = await axios.get<Article[]>(URL+"tnsv-blog/getArticles");
         setArticles(response.data);
         //console.log(articles)
       } catch (err) {

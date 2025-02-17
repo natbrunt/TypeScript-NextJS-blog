@@ -4,10 +4,11 @@ import axios from 'axios';
 
 export async function POST(req: Request) {
   const { username, password } = await req.json();
+  const URL = process.env.NEXT_PUBLIC_SERVER_URL;
 
   try {
-    // Make a request to your remote authentication server
-    const { data } = await axios.post('https://your-api/login', {
+    // Make a request to your remote authentication server 
+    const { data } = await axios.post(URL+"/user-credentials/login", {
       username,
       password,
     });

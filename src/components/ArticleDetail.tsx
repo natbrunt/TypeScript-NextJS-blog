@@ -18,11 +18,12 @@ export function ArticleDetail({ id }: { id: string }) {
   const [article, setArticle] = useState<Article | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const URL = process.env.NEXT_PUBLIC_SERVER_URL;
 
   useEffect(() => {
     const fetchArticle = async () => {
       try {
-        const response = await axios.get<Article>(`https://your-api/getArticle/${id}`)
+        const response = await axios.get<Article>(`${URL}getArticle/${id}`)
         setArticle(response.data)
       } catch (err) {
         setError("Failed to fetch article.")
