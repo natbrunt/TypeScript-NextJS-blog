@@ -16,3 +16,10 @@
  - `git clone <this>`
  - `npm i && npm run dev`
  - requires an array of articles, I left some hard-coded ones in the ArticleFeed.tsx
+
+## Common Errors
+ - When implementing process.env.NEXT_PUBLIC, we can sometimes get the routes wrong when renaming the request.
+```
+Access to XMLHttpRequest at 'https://your-server/getArticle/67ab2b65ea39e39f9aa74a5c' from origin 'https://type-script-node-js-blog.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+```
+ - Ensure that you include the sub routes, in my case it was `tnsv-blog/`
