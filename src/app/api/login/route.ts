@@ -8,12 +8,10 @@ export async function POST(req: Request) {
 
   try {
     // Make a request to your remote authentication server 
-    const { data } = await axios.post(URL+"/user-credentials/login", {
+    const { data } = await axios.post(URL+"user-credentials/login", {
       username,
       password,
     });
-
-    console.log("ok a request was made", data);
 
     // Check if the response confirms the user is an admin
     if (data.admin === true && data.ok == true) {
