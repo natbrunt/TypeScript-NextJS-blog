@@ -13,6 +13,8 @@ export async function POST(req: Request) {
       password,
     });
 
+    console.log("ok a request was made", data);
+
     // Check if the response confirms the user is an admin
     if (data.admin === true && data.ok == true) {
       const cookieStore = await cookies();
