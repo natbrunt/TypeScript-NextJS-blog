@@ -17,7 +17,7 @@ export default function SubmitArticleForm() {
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
 
-  const URL = process.env.NEXT_PUBLIC_SERVER_URL;
+  const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -33,7 +33,7 @@ export default function SubmitArticleForm() {
     }
 
     try {
-      const response = await axios.post(URL+"tnsv-blog/addArticle", articleData, {
+      const response = await axios.post(SERVER_URL+"tnsv-blog/addArticle", articleData, {
         headers: {
           "Content-Type": "application/json",
         },
