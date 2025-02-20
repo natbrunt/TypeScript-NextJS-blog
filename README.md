@@ -7,10 +7,10 @@
  - Multiple images cannot be uploaded
  - No way to display MarkDown
  - For now, the content is just one big blob.  We could parse the content for keywords that indicate a newline and a photo and then another new line.  Or we could hard code it. (That might be a better idea)
-  - For example if the article is named something then we could display a special hard-coded page else, display the details as per usual
-  - After that then the blog is ready to be made public and well marketed.
+    - For example if the article is named something then we could display a special hard-coded page else, display the details as per usual
+    - After that then the blog is ready to be made public and well marketed.
  - Blog article ideas
-  - How to install MongoDb as a Windows Service
+    - How to install MongoDb as a Windows Service
 
 ## Technologies
  - NextJS
