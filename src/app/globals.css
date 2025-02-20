@@ -76,7 +76,7 @@
   }
 }
 
-/* Additional custom styles */
+/* Additional custom styles, do I even need these??*/
 .article-card {
   @apply transition-all duration-300 ease-in-out;
 }
@@ -95,5 +95,73 @@
 
 .article-content-fade {
   @apply absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-background to-transparent;
+}
+
+@layer utilities {
+  .prose {
+    max-width: 65ch;
+    color: #374151;
+  }
+  .prose p {
+    margin-bottom: 1.25em;
+  }
+  .prose h1, .prose h2, .prose h3, .prose h4 {
+    color: #111827;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  .prose h1 {
+    font-size: 2.25em;
+    margin-top: 0;
+    margin-bottom: 0.8888889em;
+  }
+  .prose h2 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .prose h3 {
+    font-size: 1.25em;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+  }
+  .prose ul, .prose ol {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+  .prose li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .prose > ul > li p {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+  }
+  .prose blockquote {
+    font-style: italic;
+    border-left-width: 0.25rem;
+    border-left-color: #e5e7eb;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    padding-left: 1em;
+  }
+  .prose code {
+    color: #111827;
+    font-weight: 600;
+    font-size: 0.875em;
+  }
+  .prose pre {
+    color: #e5e7eb;
+    background-color: #E2E8F0;
+    overflow-x: auto;
+    font-size: 0.875em;
+    line-height: 1.7142857;
+    margin-top: 1.7142857em;
+    margin-bottom: 1.7142857em;
+    border-radius: 0.375rem;
+    padding: 0.8571429em 1.1428571em;
+  }
+
+  
 }
 

@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'http',
-        hostname: 'localhost',
+        hostname: `${process.env.NEXT_PUBLIC_HOSTNAME}`,
         port: '4040',
         pathname: '/assets/**',
       },
