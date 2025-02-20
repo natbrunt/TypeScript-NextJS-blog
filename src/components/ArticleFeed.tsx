@@ -76,7 +76,11 @@ export function ArticleFeed() {
         <Link key={article._id} href={`/article/${article._id}`}>
           <Card className="w-full aspect-square overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
             <div className="relative h-1/2">
-              <Image src={article.image || "https://kzml378iqm9efp7rc6zu.lite.vusercontent.net/placeholder.svg"} alt={article.title} layout="fill" objectFit="cover" />
+              {article.image ? 
+                <Image src={`${URL}${article.image}`} alt={article.title} layout="fill" objectFit="cover" />
+              :
+                <Image src={"https://kzml378iqm9efp7rc6zu.lite.vusercontent.net/placeholder.svg"} alt={article.title} layout="fill" objectFit="cover" />
+              }            
             </div>
             <CardHeader>
               <CardTitle className="line-clamp-1">{article.title}</CardTitle>
