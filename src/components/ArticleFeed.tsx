@@ -35,6 +35,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link"
+import ReactMarkdown from 'react-markdown'
+import markDownComponents from "./markDownComponents"
 
 interface Article {
   _id: string
@@ -88,7 +90,9 @@ export function ArticleFeed() {
             </CardHeader>
             <CardContent>
               <div className="h-24 overflow-hidden relative">
-                <p>{article.content}</p>
+                
+                <ReactMarkdown components={markDownComponents}>{article.content}</ReactMarkdown>
+              
                 <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-card to-transparent"></div>
               </div>
             </CardContent>

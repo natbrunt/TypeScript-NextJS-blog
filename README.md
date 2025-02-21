@@ -1,11 +1,13 @@
 ### Development 
  - image name cannot contain spaces, maybe fix this by adding % for everyspace in the backend
- - could be a good idea to change the meta data
  - Multiple images cannot be uploaded
- - Markdown does not display in ArticleFeed
+ - instead of displaying markdown in the ArticleFeed, it would be better to add a preview attribute to the front-end and back-end
+ - Customize the theme-toggle button
+ - v0.dev, create an About.tsx
  - Blog article ideas
     - How to install MongoDb as a Windows Service
-    - How to delivery food like a Pro in 2025
+    - How to Delivery Food like a Pro in 2025
+
 ## Technologies
  - NextJS
  - NodeJS
@@ -13,6 +15,7 @@
  - v0.dev for coding assistance
  - MongoDb
  - Tailwind CSS
+
 
 ## To be continued
  - Get AD APIs up and running
