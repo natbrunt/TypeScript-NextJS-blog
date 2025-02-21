@@ -12,6 +12,7 @@ export default function SubmitArticleForm() {
   const [title, setTitle] = useState("")
   const [description, setDescription] = useState("")
   const [content, setContent] = useState("")
+  const [preview, setPreview] = useState("")
   const [image, setImage] = useState<File | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -30,6 +31,7 @@ export default function SubmitArticleForm() {
     formData.append("title", title);
     formData.append("description", description);
     formData.append("content", content);
+    formData.append("preview", preview)
     if (image) {
       formData.append("image", image); // Send the actual file, not a blob URL
     }
@@ -45,6 +47,7 @@ export default function SubmitArticleForm() {
       setTitle("")
       setDescription("")
       setContent("")
+      setPreview("")
       setImage(null)
   
       console.log("Upload successful:", response.json());
@@ -74,6 +77,12 @@ export default function SubmitArticleForm() {
               Description
             </label>
             <Input id="description" value={description} onChange={(e) => setDescription(e.target.value)} required />
+          </div>
+          <div>
+            <label htmlFor="preview" className="block text-sm font-medium text-foreground">
+              Preview
+            </label>
+            <Input id="preview" value={preview} onChange={(e) => setPreview(e.target.value)} required />
           </div>
           <div>
             <label htmlFor="content" className="block text-sm font-medium text-foreground">
