@@ -1,44 +1,8 @@
-# fetching articles
 `import axios from 'axios'`
 
 ```
-const fetchList = async () =>{
-            axios.post(URL+'/posts/findAll')
-            .then((res) => {
-            setList(res.data)
-            console.log("Feed list declared")
-            })
-            .catch((err)=>{
-            console.log(err)
-            })
-        }
-        fetchList();
-```
-# submite-artcle
-
-```
     const handleSubmit = (method) => {
-        console.log("Submit")
-        if (method === 'add'){
-            axios.post(URL+'/posts/addPost', 
-            {
-                //req.body
-                username: props.user,
-                bookTitle: titleInput,
-                bookAuthor: authorInput,
-                imageSecureUrl: image_secure_url,
-                imagePublicId: image_public_id,
-                body: thisBody
-            })
-            .then((res) => {
-              alert(`${res.data.message}`)
-              props.setList(res.data.list)
-              setCurrentView('posts')
-            })
-            .catch((err)=>{
-              console.log(err)
-            })
-        }
+    
         else if (method === 'update')
         {
             axios.post(URL+'/posts/updatePostById', 

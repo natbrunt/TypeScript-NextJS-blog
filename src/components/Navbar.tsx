@@ -14,7 +14,7 @@ export function Navbar({ authority }: NavbarProps) {
   
   const [imageSrc, setImageSrc] = useState("/images/articleFeed-logo.jpeg");
   return (
-    <nav className="bg-primary text-primary-foreground shadow-lg">
+    <nav className="bg-primary text-primary-foreground shadow-lg dark:bg-background dark:text-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">

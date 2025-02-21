@@ -6,6 +6,13 @@ import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import ReactMarkdown from 'react-markdown'
 
+/*
+Need an edit mode, it's difficult to get good quality articles up in one sitting,
+so a GUI based interface for handling edits as admin can speed up the article
+production process
+
+*/
+
 interface Article {
   id: number
   title: string
