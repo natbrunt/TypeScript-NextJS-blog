@@ -1,12 +1,11 @@
 ### Development 
  - image name cannot contain spaces, maybe fix this by adding % for everyspace in the backend
  - Multiple images cannot be uploaded
- - instead of displaying markdown in the ArticleFeed, it would be better to add a preview attribute to the front-end and back-end
- - Customize the theme-toggle button
- - v0.dev, create an About.tsx
- - Blog article ideas
-    - How to install MongoDb as a Windows Service
-    - How to Delivery Food like a Pro in 2025
+ - Can image URLS be displayed in MarkDown?
+ - About.tsx
+    - GoDaddy
+        -ensure we have a working @nathanjbee.app email
+
 
 ## Technologies
  - NextJS
