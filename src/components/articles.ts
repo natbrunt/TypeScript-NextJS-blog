@@ -132,8 +132,7 @@ my_project/
 6) And finally we can run our files with 
 \`python stock_analysis.py\`
 
-## Conclusion
-I am using ChatGPT to help generate my python files with their dependencies.  You can easily ask *how to use data analysis with python to analyze the stock market* and you should be able to create your app.  Good luck devs!`,
+Good luck devs!`,
     preview: `Create a new folder for your project and make a virtual environment to handle dependencies.  This is necessary for using data visualizers like *matplotlib and yfinance*.  We are going to analyze the stock market.`
   }
 ];
