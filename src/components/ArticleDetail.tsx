@@ -44,6 +44,9 @@ export function ArticleDetail({ id }: { id: string }) {
 
   // if (loading) return <p>Loading...</p>
   // if (error) return <p>Error: {error}</p>
+
+  const article: Article | undefined = articles.find((a) => a._id === id)
+  
   if (!article) return <p>Article not found.</p>
 
   return (
