@@ -25,7 +25,7 @@ export function ArticleFeed() {
     _id: "67b72e6821ccc252f58f2d43",
     title: "MongoDb and ExpressJS server from scratch on Windows",
     description: "Windows 10, Windows 11",
-    image: "assets/1740058216114-mongo-article-img.jpg",
+    image: "images/mongo-article-img.jpg",
     content: `# Introduction
 Hi web devs!  
 
@@ -87,7 +87,7 @@ This tutorial is intended for a beginner who wants to get a MERN server up and r
     _id: "67b8bae9d74a507698bbeb6d",
     title: "How to Deliver Food like a Pro in 2025",
     description: "Delivery applications like Glovo, Uber, GrubHub, Deliveroo",
-    image: "assets/1740159721472-food-delivery-article-img.webp",
+    image: "images/food-delivery-article-img.webp",
     content: `## Walkthrough on setting up
 Made as a guide to help those wondering how to get started and start earning.
 
@@ -118,7 +118,7 @@ This has been a simple guide for breaking into food delivery whilst making it a 
     _id: "67c18973db4e5fecc15594c4",
     title: "Python for Data Analysis",
     description: "Start up tutorial for using Python with modules like yfinance and matplotlib",
-    image: "assets/1740736883679-python-article-image.jpg",
+    image: "images/python-article-image.jpg",
     content: `## Installation
 1) Finding the .msi or .exe
 \`https://www.python.org/downloads/windows/\`
