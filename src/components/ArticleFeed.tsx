@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link"
-import { articles, Article } from '../data/articles';
+import { articles, Article } from '@/components/articles';
 
 
 export function ArticleFeed() {
