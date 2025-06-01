@@ -10,7 +10,6 @@ interface Article {
   _id: string
   title: string
   description: string
-  date: string
   image: string
   content: string
   preview: string
