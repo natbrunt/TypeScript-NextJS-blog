@@ -78,26 +78,9 @@ This tutorial is intended for a beginner who wants to get a MERN server up and r
     content: `## Walkthrough on setting up
 Made as a guide to help those wondering how to get started and start earning.
 
-## Step 1
-Get your paperwork sorted. Depending on your country of residence there are various programs you can choose to work autonomously. In most cases, you will definitely require a legal card of residence.
-
-## Step 2
-Once the paperwork is sorted, invest in a Tax Attorney. Make sure to talk to private attorneys and also organizations of attorneys, in most cases writing by email is enough. (The more those you talk to, the cheaper your monthly rates will be)
-
-## Step 3
-Depending on your budget, invest in a vehicle. Living in Europe or a highly dense metropolitan area, has it’s benefits as we can easily buy a cheap bicycle or scooter.
-**Something fast or highway accessible is not necessary**.
-
-## Step 4
-Apply for UberEats, or GrubHub.  Try to work for as many companies as possible. Afterall you're autonomous.
-
-## Step 5 
-Once approved, which usually happens if you live in the same city or country you are applying for, begin working.  And keep track of all biz expenses and make sure to submit them to your Tax Attorney on a quarterly and annual basis.
-
-## Step 6
-Think of the future.  When you're not delivering food, work on what you are passionate about and fulfill your dreams!
-
-### Conclusion
+## The general idea
+Get your paperwork sorted. Depending on your country of residence there are various programs you can choose to work autonomously. In most cases, you will definitely require a legal card of residence.  Once the paperwork is sorted, invest in a Tax Attorney. Make sure to talk to private attorneys and also organizations of attorneys, in most cases writing by email is enough. (The more those you talk to, the cheaper your monthly rates will be)  Depending on your budget, invest in a vehicle. Living in Europe or a highly dense metropolitan area, has it’s benefits as we can easily buy a cheap bicycle or scooter.
+Next, apply for UberEats, or GrubHub.  Try to work for as many companies as possible. A good thing to remember: depending on the demand in your area, it might be better to work with a contract with UberEats.  Once approved, which usually happens if you live in the same city or country you are applying for, begin working.  And keep track of all biz expenses and make sure to submit them to your Tax Attorney on a quarterly and annual basis.
 This has been a simple guide for breaking into food delivery whilst making it a profitable endeavor.`,
     preview: `Made as a guide to help those wondering how to get started and start earning.`
   },
