@@ -19,7 +19,7 @@ const markDownComponents = {
     code: ({ inline, ...props }: CodeProps) =>
       inline
         ? <code className="bg-secondary rounded px-1" {...props} />
-        : <code className="block bg-secondary rounded p-2 mb-4 ml-4" {...props} />,
+        : <code className="block bg-secondary rounded p-2 mb-4" {...props} />,
   }
 
 export default markDownComponents
