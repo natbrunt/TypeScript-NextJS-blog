@@ -1,12 +1,3 @@
-### Development 
- - image name cannot contain spaces, maybe fix this by adding % for everyspace in the backend
- - Multiple images cannot be uploaded
- - Can image URLS be displayed in MarkDown?
- - About.tsx
-    - GoDaddy
-        -ensure we have a working @nathanjbee.app email
-
-
 ## Technologies
  - NextJS
  - NodeJS
