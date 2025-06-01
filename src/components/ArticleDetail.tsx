@@ -57,7 +57,7 @@ export function ArticleDetail({ id }: { id: string }) {
       </CardHeader>
       <div className="relative h-64">
         {article.image ? 
-          <Image src={`$${article.image}`} alt={article.title} layout="fill" objectFit="cover" />
+          <Image src={`${article.image}`} alt={article.title} layout="fill" objectFit="cover" />
         :
           <Image src={"https://kzml378iqm9efp7rc6zu.lite.vusercontent.net/placeholder.svg"} alt={article.title} layout="fill" objectFit="cover" />
         }    
