@@ -53,7 +53,7 @@ export function ArticleDetail({ id }: { id: string }) {
     <Card className="max-w-3xl mx-auto mt-8">
       <CardHeader>
         <CardTitle>{article.title}</CardTitle>
-        <CardDescription>{article.date}</CardDescription>
+        <CardDescription>{article.description}</CardDescription>
       </CardHeader>
       <div className="relative h-64">
         {article.image ? 
